@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <!-- Yksinkertainen HTML-matopeli mobiilille -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Matopeli</title>
+    <style>
+        /* Responsiivinen koko ja swipe-kytkennät */
+        body {
+            margin: 0;
+            overflow: hidden;
+            font-family: sans-serif;
+            touch-action: none;
+        }
+        #game { width: 100vw; height: 100vh; background: #222; }
+        canvas { display: block; }
+    </style>
+</head>
+<body>
+    <div id="game">
+        <canvas id="canvas"></canvas>
+    </div>
+    <script src="matopeli.js"></script>
+</body>
+</html>
